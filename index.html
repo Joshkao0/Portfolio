@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <button id="langToggle">EN</button>
+  <title>Joshkao - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <!-- Profile Section -->
+    <section class="profile-section" aria-label="Profil von Joshkao">
+      <div class="profile-image-container">
+        <img src="img/Benutzer/Benutzerbild.PNG" alt="Profilbild Benutzer" class="profile-image" onerror="this.src='https://via.placeholder.com/180'">
+        <div class="profile-badge" aria-label="Blitz Icon"><i class="ri-flashlight-line"></i></div>
+      </div>
+      <div class="profile-details">
+        <h1 class="profile-name">Joshkao</h1>
+        <p class="profile-subtitle">Hi ich bin Joshkao oder Ertan und ich habe spaß mit Tec und idk... spaß halt.</p>
+        <p class="profile-description">Habt Spaß! Und schaut euch die Projekte an.</p>
+
+        <div class="profile-stats" aria-label="Profil Statistiken">
+          <div class="profile-stat" style="color: #facc15;">
+            <i class="ri-lightbulb-flash-line profile-stat-icon" aria-hidden="true"></i>
+            <div>
+              <div class="profile-stat-value">10+</div>
+              <div class="profile-stat-label">Abgeschlossene Projekte</div>
+            </div>
+          </div>
+          <div class="profile-stat" style="color: #22c55e;">
+            <i class="ri-time-line profile-stat-icon" aria-hidden="true"></i>
+            <div>
+              <div class="profile-stat-value">1,5+</div>
+              <div class="profile-stat-label">Jahre Erfahrung</div>
+            </div>
+          </div>
+          <div class="profile-stat" style="color: #3b82f6;">
+            <i class="ri-cpu-line profile-stat-icon" aria-hidden="true"></i>
+            <div>
+              <div class="profile-stat-value">4</div>
+              <div class="profile-stat-label">Verschiedene Boards</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-tags" aria-label="Profil Skills">
+          <span class="profile-tag">ESP32/ESP8266</span>
+          <span class="profile-tag">Arduino</span>
+          <span class="profile-tag">Tec stuff</span>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="🔍 Projekte durchsuchen...">
+    </div>
+
+    <!-- Projects Container -->
+    <div id="projects"></div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" tabindex="0" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content" tabindex="0">
+      <span class="close" onclick="closeModal()" aria-label="Schließen">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+<footer class="daten">
+  <p>
+    © <span id="year"></span> Joshkao Alle Rechte vorbehalten.
+    <a href="https://docs.google.com/document/d/1KYouftarPhQ07WWtBuGrrN9v8OMkQOC9dEZHdIldZng/edit?tab=t.0">Google Docs</a> 
+  </p>
+</footer>
+
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+  <script src="script.js"></script>
+</body>
+</html>
