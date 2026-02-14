@@ -139,6 +139,25 @@ const searchInput = document.getElementById('searchInput');
 let currentLanguage = 'de';
 
 const translations = {
+
+
+  
+// ===== PROFILE TRANSLATIONS =====
+"Hi ich bin Joshkao und ich habe spaß mit Tec und idk... spaß halt.": { 
+  en: "Hi, I'm Joshkao and I enjoy tech and… well, just having fun." 
+},
+"Habt Spaß! Und schaut euch die Projekte an.": { 
+  en: "Have fun! And check out the projects." 
+},
+"hier ist mein Google Docs mit allen meinen Stuff das ich außerhalb tue!": { 
+  en: "Here is my Google Docs with all the stuff I do outside of this portfolio!" 
+},
+"Abgeschlossene Projekte": { en: "Completed Projects" },
+"Jahre Erfahrung": { en: "Years of Experience" },
+"Verschiedene Boards": { en: "Different Boards" },
+
+
+
   // Category names
   "ESP-Projekte": { en: "ESP Projects" },
   "Arduino UNO R3 Projekte": { en: "Arduino UNO R3 Projects" },
@@ -193,6 +212,50 @@ function makeChip(text, badgeText = null) {
   chip.innerHTML = `${badgeText ? `<span class="badge">${translate(badgeText)}</span>` : ""}${escapeHtml(text)}`;
   return chip;
 }
+
+// ===== STATIC PROFILE TEXT TRANSLATION =====
+function translateStaticTexts() {
+
+  // Subtitle
+  const subtitle = document.querySelector('.profile-subtitle');
+  if (subtitle) {
+    subtitle.textContent = translate(
+      "Hi ich bin Joshkao und ich habe spaß mit Tec und idk... spaß halt."
+    );
+  }
+
+  // Description
+  const description = document.querySelector('.profile-description');
+  if (description) {
+    description.textContent = translate(
+      "Habt Spaß! Und schaut euch die Projekte an."
+    );
+  }
+
+  // Google Docs Text (mit Link erhalten)
+  const googleDocs = document.querySelector('.Google-Docs');
+  if (googleDocs) {
+    googleDocs.innerHTML = `
+      ${translate("hier ist mein Google Docs mit allen meinen Stuff das ich außerhalb tue!")}
+      <a href="https://docs.google.com/document/d/1KYouftarPhQ07WWtBuGrrN9v8OMkQOC9dEZHdIldZng/edit?tab=t.0">
+      Google Docs
+      </a>
+    `;
+  }
+
+// Stats Labels (FIXED)
+document.querySelectorAll('.profile-stat-label').forEach(el => {
+
+  // Originaltext beim ersten Mal speichern
+  if (!el.dataset.original) {
+    el.dataset.original = el.textContent.trim();
+  }
+
+  el.textContent = translate(el.dataset.original);
+});
+
+}
+
 
 function escapeHtml(s) {
   return String(s)
@@ -349,7 +412,7 @@ function renderProjects(filter = '') {
 }
 
 // Fade-In beim Laden
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
   document.body.classList.add("loaded");
 });
 
@@ -391,14 +454,17 @@ document.addEventListener("keydown", (e) => {
 
 searchInput.addEventListener('input', (e) => { renderProjects(e.target.value); });
 
-// Language toggle button handler
+/// Language toggle button handler
 const langToggle = document.getElementById('langToggle');
 if (langToggle) {
   langToggle.addEventListener('click', () => {
     currentLanguage = currentLanguage === 'de' ? 'en' : 'de';
     langToggle.textContent = currentLanguage === 'de' ? '🇬🇧 EN' : '🇩🇪 DE';
+
     renderProjects(searchInput.value);
+    translateStaticTexts(); // 👈 WICHTIG
   });
 }
 
 renderProjects();
+translateStaticTexts();
