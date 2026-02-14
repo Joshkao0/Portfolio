@@ -1,6 +1,16 @@
 /* =========================
    Global & Reset
 ========================= */
+html {
+  background: #111827; /* verhindert Flash bei Body */
+}
+
+/* Language Button */
+#langToggle {
+  background: linear-gradient(135deg, #c77dff, #ec4899);
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,8 +25,15 @@ body {
   color: white;
   min-height: 100vh;
   padding: 20px;
-  opacity: 0;
-  transition: opacity 0.8s ease;
+}
+
+body.loaded {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 body.loaded {
@@ -109,6 +126,10 @@ h1, h2, h3 {
 .profile-description {
   color: #B0B0D0;
   line-height: 1.6;
+}
+.Google-Docs {
+  margin-top: 15px;
+  color: #A0A0C0;
 }
 
 .profile-stats {
@@ -206,6 +227,16 @@ h1, h2, h3 {
   white-space: nowrap;
   box-shadow: 0 4px 15px rgba(199, 125, 255, 0.3);
 }
+
+#langToggle {
+  opacity: 0; /* initial unsichtbar */
+  transition: opacity 0.3s ease, transform 0.2s, box-shadow 0.3s;
+}
+
+body.loaded #langToggle {
+  opacity: 1;
+}
+
 
 #langToggle:hover {
   transform: translateY(-2px);
@@ -506,7 +537,7 @@ h1, h2, h3 {
 }
 
 .daten {
-  color: #ccc;
+  color: #000000;
   text-align: center;
   padding: 20px;
   font-size: 14px;
