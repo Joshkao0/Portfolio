@@ -153,13 +153,13 @@ const translations = {
 
   
 // ===== PROFILE TRANSLATIONS =====
-"Hi ich bin Joshkao und ich habe spaß mit Tec und idk... spaß halt.": { 
-  en: "Hi, I'm Joshkao and I enjoy tech and… well, just having fun." 
+"Hi ich bin Joshkao und ich habe spaß mit Tec idk ich tue das was spaß macht.": { 
+  en: "Hi, I'm Joshkao and I enjoy tech and do stuff just for having fun." 
 },
 "Habt Spaß! Und schaut euch die Projekte an.": { 
   en: "Have fun! And check out the projects." 
 },
-"hier ist mein Google Docs mit allen meinen Stuff das ich außerhalb tue!": { 
+"Hier ist mein Google Docs mit allen meinen Stuff das ich außerhalb tue!": { 
   en: "Here is my Google Docs with all the stuff I do outside of this portfolio!" 
 },
 "Abgeschlossene Projekte": { en: "Completed Projects" },
@@ -232,7 +232,7 @@ function translateStaticTexts() {
   const subtitle = document.querySelector('.profile-subtitle');
   if (subtitle) {
     subtitle.textContent = translate(
-      "Hi ich bin Joshkao und ich habe spaß mit Tec und idk... spaß halt."
+      "Hi ich bin Joshkao und ich habe spaß mit Tec idk ich tue das was spaß macht."
     );
   }
 
@@ -248,7 +248,7 @@ function translateStaticTexts() {
   const googleDocs = document.querySelector('.Google-Docs');
   if (googleDocs) {
     googleDocs.innerHTML = `
-      ${translate("hier ist mein Google Docs mit allen meinen Stuff das ich außerhalb tue!")}
+      ${translate("Hier ist mein Google Docs mit allen meinen Stuff das ich außerhalb tue!")}
       <a href="https://docs.google.com/document/d/1KYouftarPhQ07WWtBuGrrN9v8OMkQOC9dEZHdIldZng/edit?tab=t.0">
       Google Docs
       </a>
