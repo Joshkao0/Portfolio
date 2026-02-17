@@ -99,7 +99,17 @@ const projectCategories = {
       videoThumbnail: "img/Thumbnail/Fan2.jpg"
     },
   ],
-  "Modding": [
+
+    "Teaser": [
+    {
+      title: "Teaser mit ein wenig Kuchen",
+      description: "Was könnte der neue Teaser sein?",
+    },
+
+
+
+  ],
+    "Modding": [
     {
       title: "3DS Modding",
       description: "Modifizierter Nintendo 3DS mit neuer Software. Mehr Hilfe bei https://3ds.hacks.guide/",
@@ -162,6 +172,7 @@ const translations = {
   "ESP-Projekte": { en: "ESP Projects" },
   "Arduino UNO R3 Projekte": { en: "Arduino UNO R3 Projects" },
   "Nur mit Strom/Steckbrett": { en: "Power/Breadboard Only" },
+  "Teaser mit ein wenig Kuchen": { en: "Teaser with some Pie" },
   "Modding": { en: "Modding" },
   // Project titles and descriptions
   "Space Invaders - aktualisierter Bau": { en: "Space Invaders - Updated Build" },
@@ -184,6 +195,7 @@ const translations = {
   "Ein Buzzer piept, bis ein Knopf gedrückt wird. Lässt man ihn los, piept er weiter.": { en: "A buzzer beeps until a button is pressed. Release it and it keeps beeping." },
   "Stolperfalle": { en: "Tripwire Alarm" },
   "Stolperfalle ohne das Stolpern halt.": { en: "Tripwire without the tripping." },
+  "Was könnte der neue Teaser sein?": { en: "What could the new teaser be?" },
   "Fan zu abkühlen": { en: "Cooling Fan" },
   "Ein kleiner Lüfter der jemanden schön abkühlen kann mit ca. 60dB.": { en: "A small fan that can cool someone down at about 60dB." },
   "3DS Modding": { en: "3DS Modding" },
