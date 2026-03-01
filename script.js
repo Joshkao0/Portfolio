@@ -1,33 +1,6 @@
 const projectCategories = {
-  "ESP-Projekte": [
-    {
-      title: "Space Invaders - aktualisierter Bau",
-      description: "Space Invaders mit OLED-Display und Potentiometer aktualisierter.",
-      specs: ["2x Steckbrett", "1x ESP32", "0.96\" I2C OLED", "1x Buzzer", "1x Potentiometer"],
-      date: "Mai 2025",
-      image: "img/space_invaders_neu1.jpg",
-    },
-    {
-      title: "RC-Car mit WiFi (abgebrochen)", 
-      description: "Ein ferngesteuertes Auto über WLAN.",
-      specs: ["1x ESP8266", "4x DC-Motoren", "1x L298N", "App-gesteuert"],
-      date: "Juni 2025",
-      image: "img/rc_car1.jpg",
-      image2: "img/rc_car2.jpg",
-      image3: "img/rc_car3.jpg"
-    },
-    {
-      title: "Flappybird",
-      description: "Ähnlich wie Space Invaders ein Fun-Spielzeug für zwischendurch.",
-      specs: ["1x ESP32","1x Steckbrett","0.96\" I2C OLED","1x Button"],
-      date: "1.8.2025",
-      image: "img/Flappybird1.jpg",
-      image2: "img/Flappybird2.jpg",
-      image3: "img/Videos/Flappybird3.mp4",
-      videoThumbnail: "img/Thumbnail/Flappybird3-thumb.jpg"
-    }
-  ],
-  "Arduino UNO R3 Projekte": [
+ 
+   "Arduino UNO R3 Projekte": [
     {
       title: "LED-Roulette",
       description: "5 LEDs mit Zufallswurf.",
@@ -46,16 +19,95 @@ const projectCategories = {
       image: "img/space_invaders_alt1.jpg",
     },
     {
-      title: "Licht mit Servo steuern",
-      description: "Ein kleiner test ob die Servos funktionieren.",
+      title: "Servo Gate",
+      description: "Ein gate das mit einem ultraschall sensor geöffnet und geschlossen wird. Es ist mehr ein Test ob die Servos funktionieren, aber es ist trotzdem ganz lustig geworden.",
       specs: ["1x Servo Motor","xy Jumper Kabel"],
       date: "30.8.2025",
-      image: "img/Servo1.jpg",
-      image2: "img/Servo2.jpg",
-      image3: "img/VideosServo/Fan3.mp4",
-      videoThumbnail: "img/Thumbnail/Sero3.jpg"
+      image: "img/Servo1.png",
+      image2: "img/Servo2.png",
     },
   ],
+  "ESP-Projekte": [
+    {
+      title: "Space Invaders - aktualisierter Bau",
+      description: "Space Invaders mit OLED-Display und Potentiometer aktualisierter.",
+      specs: ["2x Steckbrett", "1x ESP32", "0.96\" I2C OLED", "1x Buzzer", "1x Potentiometer"],
+      date: "Mai 2025",
+      image: "img/space_invaders_neu1.jpg",
+    },
+    {
+      title: "RC-Car mit WiFi (abgebrochen)", 
+      description: "Ein ferngesteuertes Auto über WLAN.",
+      specs: ["1x ESP8266", "4x DC-Motoren", "1x L298N", "App-gesteuert"],
+      date: "Juni 2025",
+      image: "img/rc_car1.jpg",
+      
+    },
+    {
+      title: "Flappybird",
+      description: "Ähnlich wie Space Invaders ein Fun-Spielzeug für zwischendurch.",
+      specs: ["1x ESP32","1x Steckbrett","0.96\" I2C OLED","1x Button"],
+      date: "1.8.2025",
+      image: "img/Flappybird1.jpg",
+      image2: "img/Flappybird2.jpg",
+      image3: "img/Videos/Flappybird3.mp4",
+      videoThumbnail: "img/Thumbnail/Flappybird3-thumb.jpg"
+    },
+    {
+      title: "ESP8266 Licht an und aus schalten",
+      description: "Ein ESP8266 schaltet ein Licht ein und aus.",
+      specs: ["1x ESP8266", "1x LED", "1x 220Ω Widerstand"],
+      date: "15.8.2025",
+      
+    },
+  ],
+    "Raspberry Pi 2": [
+    {
+      title: "Raspberry Pi 2",
+      description: "Ich habe ein Raspberry PI 2 von meinem Klassen Lehrer bekommen! Ich habe nur basic sachen mit dem PI image gemacht, wie z.B. Recalbox installiert und ein bisschen mit PI OS rumgespielt. Ich habe auch ein bisschen mit Python und GPIO Pins rumgespielt, aber nichts großes gemacht.",
+      date: "20.2.2026",
+      image: "img/raspberry_pi2.jpg",
+      image2: "img/raspberry_pi2_2.jpg",
+      image3: "img/raspberry_pi2_3.jpg",
+    },
+
+
+
+  ],
+
+  "Raspberry Pi 5": [
+    {
+      title: "Raspberry Pi 5",
+      description: "In Arbeit",
+    },
+
+
+  ],
+    "Modding": [
+    {
+      title: "3DS Modding",
+      description: "Modifizierter Nintendo 3DS mit neuer Software. Mehr Hilfe bei https://3ds.hacks.guide/",
+      specs: ["Nintendo 3DS", "Homebrew Launcher", "Micro SD Karte Min 32GB"],
+      date: "2025",
+      image: "img/3ds_mod1.jpg",
+    },
+    {
+      title: "Samsung S6 Edge Modding",
+      description: "Modifizierter Samsung S6 Edge mit neuer Software.(Unoffical Custom ROM LineageOS Andorid 11 mit Gapps) OEM entsperrt. Bootloader entsperrt. Odin ist Benötigt.",
+      specs: ["Samsung S6 Edge", "Custom ROM", "Micro SD Karte Min 8GB"],
+      date: "23.12.2025",
+      image: "img/s6_edge_mod1.jpg",
+      image2: "img/s6_edge_mod2.jpg",
+    },
+    {
+      title: "Samsung J5  Modding",
+      description: "Modifizierter Samsung J5 mit neuer Software.(Unoffical Custom ROM LineageOS Andorid 11 mit Gapps) OEM entsperrt. Bootloader entsperrt. Odin ist Benötigt.",
+      specs: ["Samsung J5", "Custom ROM", "Micro SD Karte Min 8GB"],
+      date: "20.12.2025",
+      image: "img/j5_mod1.jpg",
+      image2: "img/j5_mod2.jpg",
+    },
+  ],  
   "Nur mit Strom/Steckbrett": [
     {
       title: "Lichtschaltung",
@@ -78,7 +130,7 @@ const projectCategories = {
       description: "Ein Buzzer piept, bis ein Knopf gedrückt wird. Lässt man ihn los, piept er weiter.",
       specs: ["1x Steckbrett", "1x LED","1x 220Ω Widerstand", "1x Button", "1x Aktiver Buzzer"],
       date: "16.4.2025",
-      image: "img/buzzer peep1.jpg",
+      image: "img/buzzer_peep1.jpg",
     },
     {
       title: "Stolperfalle",
@@ -95,50 +147,8 @@ const projectCategories = {
       date: "4.8.2025",
       image: "img/Fan1.jpg",
       image2: "img/Fan2.jpg",
-      image3: "img/Videos/Fan3.mp4",
-      videoThumbnail: "img/Thumbnail/Fan2.jpg"
     },
   ],
-
-    "Teaser": [
-    {
-      title: "Teaser mit ein wenig Kuchen",
-      description: "Was könnte der neue Teaser sein?",
-    },
-
-
-
-  ],
-    "Modding": [
-    {
-      title: "3DS Modding",
-      description: "Modifizierter Nintendo 3DS mit neuer Software. Mehr Hilfe bei https://3ds.hacks.guide/",
-      specs: ["Nintendo 3DS", "Homebrew Launcher", "Micro SD Karte Min 32GB"],
-      date: "2025",
-      image: "img/3ds_mod1.jpg",
-    },
-    {
-      title: "Samsung S6 Edge Modding",
-      description: "Modifizierter Samsung S6 Edge mit neuer Software.(Unoffical Custom ROM LineageOS Andorid 11 mit Gapps) OEM entsperrt. Bootloader entsperrt. Odin ist Benötigt.",
-      specs: ["Samsung S6 Edge", "Custom ROM", "Micro SD Karte Min 8GB"],
-      date: "23.12.2025",
-      image: "img/s6_edge_mod1.jpg",
-    },
-    {
-      title: "Samsung J5  Modding",
-      description: "Modifizierter Samsung J5 mit neuer Software.(Unoffical Custom ROM LineageOS Andorid 11 mit Gapps) OEM entsperrt. Bootloader entsperrt. Odin ist Benötigt.",
-      specs: ["Samsung J5", "Custom ROM", "Micro SD Karte Min 8GB"],
-      date: "20.12.2025",
-      image: "img/j5_mod1.jpg"
-    },
-    {
-      title: "Samsung Galaxy 5 Tab   Modding",
-      description: "Modifizierter Samsung Galaxy 5 Tab mit neuer Software.(Unoffical Custom ROM LineageOS Andorid 10 mit Gapps) OEM entsperrt. Bootloader entsperrt. Odin ist Benötigt.",
-      specs: ["Samsung Galaxy 5 Tab", "Custom ROM", "Micro SD Karte Min 8GB"],
-      date: "20.12.2025",
-      image: "img/Tab_5mod1.jpg"
-    },
-  ]
 };
 
 const projectsDiv = document.getElementById('projects');
@@ -171,22 +181,42 @@ const translations = {
   // Category names
   "ESP-Projekte": { en: "ESP Projects" },
   "Arduino UNO R3 Projekte": { en: "Arduino UNO R3 Projects" },
-  "Nur mit Strom/Steckbrett": { en: "Power/Breadboard Only" },
-  "Teaser mit ein wenig Kuchen": { en: "Teaser with some Pie" },
+  "Raspberry Pi 2": { en: "Raspberry Pi 2" },
+  "Raspberry Pi 5": { en: "Raspberry Pi 5" },
   "Modding": { en: "Modding" },
+  "Nur mit Strom/Steckbrett": { en: "Power/Breadboard Only" },
+
   // Project titles and descriptions
+  //ESP Projekte
   "Space Invaders - aktualisierter Bau": { en: "Space Invaders - Updated Build" },
   "Space Invaders mit OLED-Display und Potentiometer aktualisierter.": { en: "Space Invaders with OLED display and updated potentiometer." },
   "RC-Car mit WiFi (abgebrochen)": { en: "RC Car with WiFi (Discontinued)" },
   "Ein ferngesteuertes Auto über WLAN.": { en: "A remote controlled car via WiFi." },
   "Flappybird": { en: "Flappybird" },
-  "Ähnlich wie Space Invaders ein Fun-Spielzeug für zwischendurch.": { en: "Similar to Space Invaders, a fun toy to play with." },
+  "Ähnlich wie Space Invaders ein Fun-Spielzeug für zwischendurch.": { en: "Similar to sSpace Invaders, a fun toy to play with." },
+  //Arduino UNO R3
   "LED-Roulette": { en: "LED Roulette" },
   "5 LEDs mit Zufallswurf.": { en: "5 LEDs with random selection." },
   "Space Invaders - alte Version": { en: "Space Invaders - Old Version" },
   "Space Invaders mit OLED-Display und Potentiometer. Alte Version hier ohne, weil mein Potentiometer kaputt ging :(": { en: "Space Invaders with OLED display and potentiometer. Old version without it because my potentiometer broke :(" },
-  "Licht mit Servo steuern": { en: "Control Light with Servo" },
-  "Ein kleiner test ob die Servos funktionieren.": { en: "A small test to see if the servos work." },
+  "Servo Gate": { en: "Servo Gate" },
+  "Ein gate das mit einem ultraschall sensor geöffnet und geschlossen wird. Es ist mehr ein Test ob die Servos funktionieren, aber es ist trotzdem ganz lustig geworden.": { en: "A gate that is opened and closed with an ultrasonic sensor. It is more of a test to see if the servos work, but it was still quite fun." },
+  //PI2
+  "Raspberry Pi 2": { en: "Raspberry Pi 2" },
+  //Projekt Raspberry Pi 2
+  "Ich habe ein Raspberry PI 2 von meinem Klassen Lehrer bekommen! Ich habe nur basic sachen mit dem PI image gemacht, wie z.B. Recalbox installiert und ein bisschen mit PI OS rumgespielt. Ich habe auch ein bisschen mit Python und GPIO Pins rumgespielt, aber nichts großes gemacht.": { en: "I got a Raspberry Pi 2 from my class teacher! I only did basic stuff with the Pi image, like installing Recalbox and playing around with Pi OS. I also played a bit with Python and GPIO pins, but didn't do anything big." },
+  //PI 5
+  "Raspberry Pi 5": { en: "Raspberry Pi 5" },
+  //Projekte Raspberry Pi 5
+  "In Arbeit": { en: "Work in Progress" },
+  //Modding
+  "3DS Modding": { en: "3DS Modding" },
+  "Modifizierter Nintendo 3DS mit neuer Software. Mehr Hilfe bei https://3ds.hacks.guide/": { en: "Modified Nintendo 3DS with new software. More help at https://3ds.hacks.guide/" },
+  "Samsung S6 Edge Modding": { en: "Samsung S6 Edge Modding" },
+  "Modifizierter Samsung S6 Edge mit neuer Software.(Unoffical Custom ROM LineageOS Andorid 11 mit Gapps) OEM entsperrt. Bootloader entsperrt. Odin ist Benötigt.": { en: "Modified Samsung S6 Edge with new software. (Unofficial Custom ROM LineageOS Android 11 with Gapps) OEM unlocked. Bootloader unlocked. Odin required." },
+  "Samsung J5  Modding": { en: "Samsung J5 Modding" },
+  "Modifizierter Samsung J5 mit neuer Software.(Unoffical Custom ROM LineageOS Andorid 11 mit Gapps) OEM entsperrt. Bootloader entsperrt. Odin ist Benötigt.": { en: "Modified Samsung J5 with new software. (Unofficial Custom ROM LineageOS Android 11 with Gapps) OEM unlocked. Bootloader unlocked. Odin required." },
+  //Nur mit Strom/Steckbrett
   "Lichtschaltung": { en: "Light Switch" },
   "Eine LED wird per Knopfdruck ausgeschaltet. Lässt man den Knopf los, geht die andere LED an.": { en: "One LED turns off when a button is pressed. Release the button and another LED turns on." },
   "LED-Helligkeit": { en: "LED Brightness" },
@@ -198,14 +228,6 @@ const translations = {
   "Was könnte der neue Teaser sein?": { en: "What could the new teaser be?" },
   "Fan zu abkühlen": { en: "Cooling Fan" },
   "Ein kleiner Lüfter der jemanden schön abkühlen kann mit ca. 60dB.": { en: "A small fan that can cool someone down at about 60dB." },
-  "3DS Modding": { en: "3DS Modding" },
-  "Modifizierter Nintendo 3DS mit neuer Software. Mehr Hilfe bei https://3ds.hacks.guide/": { en: "Modified Nintendo 3DS with new software. More help at https://3ds.hacks.guide/" },
-  "Samsung S6 Edge Modding": { en: "Samsung S6 Edge Modding" },
-  "Modifizierter Samsung S6 Edge mit neuer Software.(Unoffical Custom ROM LineageOS Andorid 11 mit Gapps) OEM entsperrt. Bootloader entsperrt. Odin ist Benötigt.": { en: "Modified Samsung S6 Edge with new software. (Unofficial Custom ROM LineageOS Android 11 with Gapps) OEM unlocked. Bootloader unlocked. Odin required." },
-  "Samsung J5  Modding": { en: "Samsung J5 Modding" },
-  "Modifizierter Samsung J5 mit neuer Software.(Unoffical Custom ROM LineageOS Andorid 11 mit Gapps) OEM entsperrt. Bootloader entsperrt. Odin ist Benötigt.": { en: "Modified Samsung J5 with new software. (Unofficial Custom ROM LineageOS Android 11 with Gapps) OEM unlocked. Bootloader unlocked. Odin required." },
-  "Samsung Galaxy 5 Tab   Modding": { en: "Samsung Galaxy Tab 5 Modding" },
-  "Modifizierter Samsung Galaxy 5 Tab mit neuer Software.(Unoffical Custom ROM LineageOS Andorid 10 mit Gapps) OEM entsperrt. Bootloader entsperrt. Odin ist Benötigt.": { en: "Modified Samsung Galaxy Tab 5 with new software. (Unofficial Custom ROM LineageOS Android 10 with Gapps) OEM unlocked. Bootloader unlocked. Odin required." },
   // Common terms
   "Komponente": { en: "Component" },
   "Datum": { en: "Date" },
