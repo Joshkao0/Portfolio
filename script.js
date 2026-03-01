@@ -307,13 +307,16 @@ function createProjectCard(project) {
   card.setAttribute('role', 'button');
   card.setAttribute('aria-label', translate(project.title) + ' ' + translate('Projekt öffnen'));
 
-  card.innerHTML = `
-    <img src="${project.image}" alt="${translate(project.title)}" class="project-image" onerror="this.style.display='none'">
-    <h3>${translate(project.title)}</h3>
-    <p>${translate(project.description)}</p>
-    <small class="date">${project.date}</small>
-  `;
-
+card.innerHTML = `
+  ${project.image ? 
+    `<img src="${project.image}" alt="${translate(project.title)}" class="project-image">`
+    :
+    `<div class="project-image placeholder">Kein Bild</div>`
+  }
+  <h3>${translate(project.title)}</h3>
+  <p>${translate(project.description)}</p>
+  <small class="date">${project.date}</small>
+`;
   const specs = Array.isArray(project.specs) ? project.specs : [];
   if (specs.length) {
     const chipsWrap = document.createElement('div');
@@ -502,3 +505,4 @@ if (langToggle) {
 
 renderProjects();
 translateStaticTexts();
+
