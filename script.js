@@ -1,7 +1,7 @@
 const projectCategories = {
  
    "Arduino UNO R3 Projekte": [
-    {
+  {
       title: "LED-Roulette",
       description: "5 LEDs mit Zufallswurf.",
       specs: ["1x Steckbrett", "5x LED","5x 220Ω Widerstand"],
@@ -10,22 +10,22 @@ const projectCategories = {
       image2: "img/led-roulette2.webp",
       image3: "img/Videos/led-roulette3.mp4",
       videoThumbnail: "img/Thumbnail/led-roulette3.webp"
-    },
-    {
+  },
+  {
       title: "Space Invaders - alte Version",
       description: "Space Invaders mit OLED-Display und Potentiometer. Alte Version hier ohne, weil mein Potentiometer kaputt ging :(",
       specs: ["1x Steckbrett", "1x Arduino UNO R3", "0.96\" SPI OLED", "1x Potentiometer"],
       date: "Mai 2025",
       image: "img/space_invaders_alt1.webp",
-    },
-    {
+  },
+  {
       title: "Servo Gate",
       description: "Ein gate das mit einem ultraschall sensor geöffnet und geschlossen wird. Es ist mehr ein Test ob die Servos funktionieren, aber es ist trotzdem ganz lustig geworden.",
       specs: ["1x Servo Motor","xy Jumper Kabel"],
       date: "30.8.2025",
       image: "img/Servo1.webp",
-      image2: "img/Servo2.webp",
-    },
+      image2: "img/Servo2.webp", 
+  },
   ],
   "ESP-Projekte": [
     {
@@ -34,16 +34,16 @@ const projectCategories = {
       specs: ["2x Steckbrett", "1x ESP32", "0.96\" I2C OLED", "1x Buzzer", "1x Potentiometer"],
       date: "Mai 2025",
       image: "img/space_invaders_neu1.webp",
-    },
-    {
+  },
+  {
       title: "RC-Car mit WiFi (abgebrochen)", 
       description: "Ein ferngesteuertes Auto über WLAN.",
       specs: ["1x ESP8266", "4x DC-Motoren", "1x L298N", "App-gesteuert"],
       date: "Juni 2025",
       image: "img/rc_car1.webp",
       
-    },
-    {
+  },
+  {
       title: "Flappybird",
       description: "Ähnlich wie Space Invaders ein Fun-Spielzeug für zwischendurch.",
       specs: ["1x ESP32","1x Steckbrett","0.96\" I2C OLED","1x Button"],
@@ -52,97 +52,161 @@ const projectCategories = {
       image2: "img/Flappybird2.webp",
       image3: "img/Videos/Flappybird3.mp4",
       videoThumbnail: "img/Thumbnail/Flappybird3.webp"
-    },
-    {
+  },
+  {
+      title: "ESP32 Access Point",
+      description: "Ein ESP32 der einen WiFi Access Point erstelltt. Es ist ein einfaches Projekt um die WiFi Fähigkeiten des ESP32 zu testen.",
+      specs: ["1x ESP32", "WiFi Access Point"],
+      date: "10.8.2025",
+      image: "img/esp_ap1.webp",
+
+
+  },
+  {
       title: "ESP8266 Licht an und aus schalten",
-      description: "Ein ESP8266 schaltet ein Licht ein und aus.",
+      description: "Ein ESP8266 schaltet ein Licht ein und aus.(das bild ist von https://github.com/Enjoy-Mechatronics/ESP8266-Smart-Switch)",
       specs: ["1x ESP8266", "1x LED", "1x 220Ω Widerstand"],
       date: "15.8.2025",
+      image: "img/Circuit-Diagram.webp",
       
-    },
+  },
+    
+
+
+
+
   ],
-    "Raspberry Pi 2": [
-    {
+
+   "Raspberry Pi Pico 2/Pico WH": [
+  {
+      title: "Raspberry Pi Pico 2",
+      description: "Eine einafaches an und aus der eingebauten LED mit MicroPython.",
+      specs: ["1x Raspberry Pi Pico 2", "MicroPython"],
+      date: "15.8.2025",
+      image: "img/pico_led1.webp",
+      image2: "img/pico_led2.webp",
+      
+  }, 
+  {
+      title: "Raspberry Pi Pico 2 - External LED",
+      description: "Ein Raspberry Pi Pico 2 schaltet eine externe LED ein und aus. Es ist ein einfaches Projekt um die GPIO Pins des Pico 2 zu testen(das aller erstemal den pico 2 benutzt).",
+      specs: ["1x Raspberry Pi Pico 2", "1x LED", "1x 220Ω Widerstand"],
+      date: "15.8.2025",
+      image: "img/pico_led_ext1.webp",
+      image2: "img/pico_led_ext2.webp",
+
+  },
+  {
+
+      title: "Raspberry Pi Pico 2 - GIF Display",
+      description: "Ein Raspberry Pi Pico 2 mit einem OLED Display das GIFs anzeigen kann. Es ist ein lustiges Projekt um die Möglichkeiten des Pico 2 zu zeigen.",
+      date: "15.8.2025",
+      specs: ["1x Raspberry Pi Pico 2", "1x OLED Display", "MicroPython"],
+      image: "img/pico_gif1.webp",
+      image3: "img/Videos/pico_gif2.mp4",
+      videoThumbnail: "img/Thumbnail/pico_gif1.webp",
+  },
+  {
+      title: "Raspberry Pi Pico WH - Tisch uhr",
+      description: "Ein Raspberry Pi Pico WH mit einem OLED Display das die aktuelle Zeit anzeigt. Es ist ein einfaches Projekt um die Möglichkeiten des Pico WH zu zeigen.",
+      date: "15.8.2025",
+      specs: ["1x Raspberry Pi Pico WH", "1x OLED Display", "MicroPython",],
+      image: "img/pico_uhr1.webp",
+      image2: "img/pico_uhr2.webp",
+      image3: "img/pico_uhr3.webp",
+  
+  },
+
+  ],
+
+  "Raspberry Pi 5/2": [
+  {
+      title: "Raspberry Pi 5",
+      description: "Server tool für ein Minecraft Server, man kann damit den Server starten, stoppen und neustarten. Es zeigt auch die Server Konsole man kann mit modifikationen auch speielen.",
+      specs: ["Raspberry Pi 5", "Minecraft Server", "Playit"],
+      date: "In Arbeit",
+      image: "img/pi5.webp",
+      image2: "img/pi5_1.webp",
+      
+  },
+    
+  { 
+      title: "Raspberry Pi Zero 2W P4wnP1 A.L.O.A.",
+      description: "Ein Raspberry Pi Zero 2W mit P4wnP1 A.L.O.A. installiert. Es ist ein Tool für Penetrationstests und kann als USB-Gadget fungieren, um verschiedene Angriffe durchzuführen.",
+      specs: ["1x Raspberry Pi Zero 2W", "P4wnP1 A.L.O.A.", "Pi OS Lite","Micro SD Karte Min 16GB"],
+      date: "15.8.2025",
+      image: "img/pi_zero2w1.webp",
+  },
+  {
       title: "Raspberry Pi 2",
       description: "Ich habe ein Raspberry PI 2 von meinem Klassen Lehrer bekommen! Ich habe nur basic sachen mit dem PI image gemacht, wie z.B. Recalbox installiert und ein bisschen mit PI OS rumgespielt. Ich habe auch ein bisschen mit Python und GPIO Pins rumgespielt, aber nichts großes gemacht.",
       date: "20.2.2026",
+      specs: ["Raspberry Pi 2", "Recalbox", "Python", "GPIO Pins"],
       image: "img/raspberry_pi2.webp",
-      image2: "img/raspberry_pi2_2.webp",
-      image3: "img/raspberry_pi2_3.webp",
-    },
-
-
-
-  ],
-
-  "Raspberry Pi 5": [
-    {
-      title: "Raspberry Pi 5",
-      description: "In Arbeit",
-      date: "In Arbeit",
-      
-    },
+      image2: "img/raspberry_pi2.webp",
+      image3: "img/raspberry_pi2.webp",
+ },
 
 
   ],
     "Modding": [
-    {
+  {
       title: "3DS Modding",
       description: "Modifizierter Nintendo 3DS mit neuer Software. Mehr Hilfe bei https://3ds.hacks.guide/",
       specs: ["Nintendo 3DS", "Homebrew Launcher", "Micro SD Karte Min 32GB"],
       date: "2025",
       image: "img/3ds_mod1.webp",
-    },
-    {
+  },
+  {
       title: "Samsung S6 Edge Modding",
       description: "Modifizierter Samsung S6 Edge mit neuer Software.(Unoffical Custom ROM LineageOS Andorid 11 mit Gapps) OEM entsperrt. Bootloader entsperrt. Odin ist Benötigt.",
       specs: ["Samsung S6 Edge", "Custom ROM", "Micro SD Karte Min 8GB"],
       date: "23.12.2025",
       image: "img/s6_edge_mod1.webp",
       image2: "img/s6_edge_mod2.webp",
-    },
-    {
+  },
+  {
       title: "Samsung J5  Modding",
       description: "Modifizierter Samsung J5 mit neuer Software.(Unoffical Custom ROM LineageOS Andorid 11 mit Gapps) OEM entsperrt. Bootloader entsperrt. Odin ist Benötigt.",
       specs: ["Samsung J5", "Custom ROM", "Micro SD Karte Min 8GB"],
       date: "20.12.2025",
       image: "img/j5_mod1.webp",
       image2: "img/j5_mod2.webp",
-    },
+  },
   ],  
   "Nur mit Strom/Steckbrett": [
-    {
+  {
       title: "Lichtschaltung",
       description: "Eine LED wird per Knopfdruck ausgeschaltet. Lässt man den Knopf los, geht die andere LED an.",
       specs: ["1x Steckbrett", "2x LED","1x Knopf", "1x 220Ω Widerstand"],
       date: "16.4.2025",
       image: "img/lichtpoten1.webp",
       image2: "img/lichtpoten2.webp",
-    },
-    {
+  },
+  {
       title: "LED-Helligkeit",
       description: "Eine einfache Lichtsteuerung mit einem Potentiometer.",
       specs: ["1x Steckbrett","1x LED", "1x Potentiometer", "1x 220Ω Widerstand"],
       date: "16.4.2025",
       image: "img/led-helligkeit1.webp",
       image2: "img/led-helligkeit2.webp",
-    },
-    {
+  },
+  {
       title: "Buzzer Peep",
       description: "Ein Buzzer piept, bis ein Knopf gedrückt wird. Lässt man ihn los, piept er weiter.",
       specs: ["1x Steckbrett", "1x LED","1x 220Ω Widerstand", "1x Button", "1x Aktiver Buzzer"],
       date: "16.4.2025",
       image: "img/buzzer_peep1.webp",
-    },
-    {
+  },
+  {
       title: "Stolperfalle",
       description: "Stolperfalle ohne das Stolpern halt.",
       specs: ["1x Steckbrett", "1x LED", "1x 10KΩ Widerstand", "1x BC547 Transistor", "1x LDR", "1x Buzzer", "1x Laser"],
       date: "1.8.2025",
       image: "img/Stolerfalle1.webp",
       image2: "img/Stolerfalle2.webp",
-    },
-    {
+  },
+  {
       title: "Fan zu abkühlen",
       description: "Ein kleiner Lüfter der jemanden schön abkühlen kann mit ca. 60dB.",
       specs: ["1x Steckbrett", "Handvoll mit Jumper-Kabeln", "1x DC Motor", "1x Potentiometer"],
@@ -151,7 +215,7 @@ const projectCategories = {
       image2: "img/Fan2.webp",
       image3: "img/Videos/Fan3.mp4",
       videoThumbnail: "img/Thumbnail/Fan2.webp",
-    },
+  },
   ],
 };
 
@@ -167,7 +231,7 @@ const translations = {
 
   
 // ===== PROFILE TRANSLATIONS =====
-"Hi ich bin Joshkao und ich habe spaß mit Tec idk ich tue das was spaß macht.": { 
+"Hi ich bin Joshkao und ich habe spaß mit Elektronik deshalb will ich zeigen was ich kann.": { 
   en: "Hi, I'm Joshkao and I enjoy tech and do stuff just for having fun." 
 },
 "Habt Spaß! Und schaut euch die Projekte an.": { 
@@ -185,6 +249,9 @@ const translations = {
   // Category names
   "ESP-Projekte": { en: "ESP Projects" },
   "Arduino UNO R3 Projekte": { en: "Arduino UNO R3 Projects" },
+  "Raspberry Pi Zero 2W": { en: "Raspberry Pi Zero 2W" },
+  "Raspberry Pi Pico 2": { en: "Raspberry Pi Pico 2" },
+  "Raspberry Pi Pico 2W/WH": { en: "Raspberry Pi Pico 2W/WH" },
   "Raspberry Pi 2": { en: "Raspberry Pi 2" },
   "Raspberry Pi 5": { en: "Raspberry Pi 5" },
   "Modding": { en: "Modding" },
@@ -198,6 +265,10 @@ const translations = {
   "Ein ferngesteuertes Auto über WLAN.": { en: "A remote controlled car via WiFi." },
   "Flappybird": { en: "Flappybird" },
   "Ähnlich wie Space Invaders ein Fun-Spielzeug für zwischendurch.": { en: "Similar to sSpace Invaders, a fun toy to play with." },
+  "ESP8266 Licht an und aus schalten": { en: "ESP8266 Light On/Off" },
+  "Ein ESP8266 schaltet ein Licht ein und aus.(das bild ist von https://github.com/Enjoy-Mechatronics/ESP8266-Smart-Switch)": { en: "An ESP8266 that turns a light on and off.(the image is from https://github.com/Enjoy-Mechatronics/ESP8266-Smart-Switch)" },
+  "ESP32 Access Point": { en: "ESP32 Access Point" },
+  "Ein ESP32 der einen WiFi Access Point erstelltt. Es ist ein einfaches Projekt um die WiFi Fähigkeiten des ESP32 zu testen.": { en: "An ESP32 that creates a WiFi Access Point. It's a simple project to test the WiFi capabilities of the ESP32." },
   //Arduino UNO R3
   "LED-Roulette": { en: "LED Roulette" },
   "5 LEDs mit Zufallswurf.": { en: "5 LEDs with random selection." },
@@ -205,6 +276,19 @@ const translations = {
   "Space Invaders mit OLED-Display und Potentiometer. Alte Version hier ohne, weil mein Potentiometer kaputt ging :(": { en: "Space Invaders with OLED display and potentiometer. Old version without it because my potentiometer broke :(" },
   "Servo Gate": { en: "Servo Gate" },
   "Ein gate das mit einem ultraschall sensor geöffnet und geschlossen wird. Es ist mehr ein Test ob die Servos funktionieren, aber es ist trotzdem ganz lustig geworden.": { en: "A gate that is opened and closed with an ultrasonic sensor. It is more of a test to see if the servos work, but it was still quite fun." },
+  //Raspberry Pi Zero 2W
+  "Raspberry Pi Zero 2W P4wnP1 A.L.O.A.": { en: "Raspberry Pi Zero 2W P4wnP1 A.L.O.A." },
+  "Ein Raspberry Pi Zero 2W mit P4wnP1 A.L.O.A. installiert. Es ist ein Tool für Penetrationstests und kann als USB-Gadget fungieren, um verschiedene Angriffe durchzuführen.": { en: "A Raspberry Pi Zero 2W with P4wnP1 A.L.O.A. installed. It is a tool for penetration testing and can function as a USB gadget to perform various attacks." }, 
+  //Raspberry Pi Pico 2
+  "Raspberry Pi Pico 2": { en: "Raspberry Pi Pico 2" },
+  "Eine einafaches an und aus der eingebauten LED mit MicroPython.": { en: "A simple on and off of the built-in LED with MicroPython." },
+  "Raspberry Pi Pico 2 - GIF Display": { en: "Raspberry Pi Pico 2 - GIF Display" },
+  "Ein Raspberry Pi Pico 2 mit einem OLED Display das GIFs anzeigen kann. Es ist ein lustiges Projekt um die Möglichkeiten des Pico 2 zu zeigen.": { en: "A Raspberry Pi Pico 2 with an OLED display that can show GIFs. It's a fun project to showcase the capabilities of the Pico 2." },
+  "Raspberry Pi Pico 2 - External LED": { en: "Raspberry Pi Pico 2 - External LED" },
+  "Ein Raspberry Pi Pico 2 schaltet eine externe LED ein und aus. Es ist ein einfaches Projekt um die GPIO Pins des Pico 2 zu testen(das aller erstemal den pico 2 benutzt).": { en: "A Raspberry Pi Pico 2 turns an external LED on and off. It's a simple project to test the GPIO pins of the Pico 2 (the very first time using the Pico 2)." },
+  //Raspberry Pi Pico 2W/WH
+  "Raspberry Pi Pico WH - Tisch uhr": { en: "Raspberry Pi Pico WH - Table Clock" },                                                                                     //HIER BEARBEITEN
+  "Ein Raspberry Pi Pico WH mit einem OLED Display das die aktuelle Zeit anzeigt. Es ist ein einfaches Projekt um die Möglichkeiten des Pico WH zu zeigen.": { en: "A Raspberry Pi Pico WH with an OLED display that shows the current time. It's a simple project to demonstrate the capabilities of the Pico WH." },
   //PI2
   "Raspberry Pi 2": { en: "Raspberry Pi 2" },
   //Projekt Raspberry Pi 2
@@ -212,7 +296,7 @@ const translations = {
   //PI 5
   "Raspberry Pi 5": { en: "Raspberry Pi 5" },
   //Projekte Raspberry Pi 5
-  "In Arbeit": { en: "Work in Progress" },
+  "Server tool für ein Minecraft Server, man kann damit den Server starten, stoppen und neustarten. Es zeigt auch die Server Konsole man kann mit modifikationen auch speielen.": { en: "Server tool for a Minecraft server, you can use it to start, stop, and restart the server. It also shows the server console and you can play with modifications." },
   //Modding
   "3DS Modding": { en: "3DS Modding" },
   "Modifizierter Nintendo 3DS mit neuer Software. Mehr Hilfe bei https://3ds.hacks.guide/": { en: "Modified Nintendo 3DS with new software. More help at https://3ds.hacks.guide/" },
@@ -258,7 +342,7 @@ function translateStaticTexts() {
   const subtitle = document.querySelector('.profile-subtitle');
   if (subtitle) {
     subtitle.textContent = translate(
-      "Hi ich bin Joshkao und ich habe spaß mit Tec idk ich tue das was spaß macht."
+      "Hi ich bin Joshkao und ich habe spaß mit Elektronik deshalb will ich zeigen was ich kann."
     );
   }
 
