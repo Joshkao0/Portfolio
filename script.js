@@ -1,32 +1,5 @@
 const projectCategories = {
- 
-   "Arduino UNO R3 Projekte": [
-  {
-      title: "LED-Roulette",
-      description: "5 LEDs mit Zufallswurf.",
-      specs: ["1x Steckbrett", "5x LED","5x 220Ω Widerstand"],
-      date: "18.5.2025",
-      image: "img/led-roulette1.webp",
-      image2: "img/led-roulette2.webp",
-      image3: "img/Videos/led-roulette3.mp4",
-      videoThumbnail: "img/Thumbnail/led-roulette3.webp"
-  },
-  {
-      title: "Space Invaders - alte Version",
-      description: "Space Invaders mit OLED-Display und Potentiometer. Alte Version hier ohne, weil mein Potentiometer kaputt ging :(",
-      specs: ["1x Steckbrett", "1x Arduino UNO R3", "0.96\" SPI OLED", "1x Potentiometer"],
-      date: "Mai 2025",
-      image: "img/space_invaders_alt1.webp",
-  },
-  {
-      title: "Servo Gate",
-      description: "Ein gate das mit einem ultraschall sensor geöffnet und geschlossen wird. Es ist mehr ein Test ob die Servos funktionieren, aber es ist trotzdem ganz lustig geworden.",
-      specs: ["1x Servo Motor","xy Jumper Kabel"],
-      date: "30.8.2025",
-      image: "img/Servo1.webp",
-      image2: "img/Servo2.webp", 
-  },
-  ],
+
   "ESP-Projekte": [
     {
       title: "Space Invaders - aktualisierter Bau",
@@ -70,14 +43,16 @@ const projectCategories = {
       image: "img/Circuit-Diagram.webp",
       
   },
-    
-
-
-
-
+  //{
+      //title: "ESP32-C3 1,54Inch E-Ink Display von Waveshare",
+      //description: "ESP32-C3 1,54 Zoll E-Ink Display Es ist ein einfaches Projekt für den ESP32-C3  bsp. die Uhrzeit zuzeigen.", 
+      //specs: ["1x ESP32-C3", "1x 1,54 Zoll E-Ink Display von Waveshare"],
+      //date: "15.8.2025",
+      //image: "img/esp32_c3_eink1.webp",
+      
+  //},
   ],
-
-   "Raspberry Pi Pico 2/Pico WH": [
+     "Raspberry Pi Pico 2/Pico WH": [
   {
       title: "Raspberry Pi Pico 2",
       description: "Eine einafaches an und aus der eingebauten LED mit MicroPython.",
@@ -116,10 +91,53 @@ const projectCategories = {
       image3: "img/pico_uhr3.webp",
   
   },
-
+  //{
+    //title: "Namens schild mit einem E-Ink Display.",
+    //description:"Ein  Pi Pico das mit einem E-Ink Display mit meinem Namen",
+    //date: "22.5.26",
+    //specs:["Pi Pico alle versionen", "E-Ink Display",],
+    //image: "img/pico_namensschild1.webp"
+  //},
+  ],
+  
+  
+  "Arduino UNO R3 Projekte": [
+  {
+      title: "LED-Roulette",
+      description: "5 LEDs mit Zufallswurf.",
+      specs: ["1x Steckbrett", "5x LED","5x 220Ω Widerstand"],
+      date: "18.5.2025",
+      image: "img/led-roulette1.webp",
+      image2: "img/led-roulette2.webp",
+      image3: "img/Videos/led-roulette3.mp4",
+      videoThumbnail: "img/Thumbnail/led-roulette3.webp"
+  },
+  {
+      title: "Space Invaders - alte Version",
+      description: "Space Invaders mit OLED-Display und Potentiometer. Alte Version hier ohne, weil mein Potentiometer kaputt ging :(",
+      specs: ["1x Steckbrett", "1x Arduino UNO R3", "0.96\" SPI OLED", "1x Potentiometer"],
+      date: "Mai 2025",
+      image: "img/space_invaders_alt1.webp",
+  },
+  {
+      title: "Servo Gate",
+      description: "Ein gate das mit einem ultraschall sensor geöffnet und geschlossen wird. Es ist mehr ein Test ob die Servos funktionieren, aber es ist trotzdem ganz lustig geworden.",
+      specs: ["1x Servo Motor","xy Jumper Kabel"],
+      date: "30.8.2025",
+      image: "img/Servo1.webp",
+      image2: "img/Servo2.webp", 
+  },
+  //{
+      //title: "Arduino UNO R3 - RGB-LED- Selber steuern",
+      //description: "Ein Arduino UNO R3 der eine RGB-LED steuert. Es ist ein einfaches Projekt dazu ist ein 0.92\" SPI OLED verbunden der die HEX-Werte anzeigt.",
+      //specs: ["1x Arduino UNO R3", "1x RGB-LED", "1x 0.92\" SPI OLED","1x Potentiometer"],
+      //date: "19.7.2025",
+      //image: "img/arduino_rgb_led1.webp",
+  //},
   ],
 
-  "Raspberry Pi 5/2": [
+  
+  "Raspberry Pi's": [
   {
       title: "Raspberry Pi 5",
       description: "Server tool für ein Minecraft Server, man kann damit den Server starten, stoppen und neustarten. Es zeigt auch die Server Konsole man kann mit modifikationen auch speielen.",
@@ -137,6 +155,13 @@ const projectCategories = {
       date: "15.8.2025",
       image: "img/pi_zero2w1.webp",
   },
+  //{
+      //title: "Pwny (Pwnagotchi)",
+      //description: "Ein Rasberry Pi Zero 2W der WiFi Pakete abfängt die man später ablesen kann",
+      //specs: ["1x Raspberry Pi Zero 2W", "1x 16GB Micro SD-Kart", ""],
+      //date: "29.4.26"
+
+  //}, 
   {
       title: "Raspberry Pi 2",
       description: "Ich habe ein Raspberry PI 2 von meinem Klassen Lehrer bekommen! Ich habe nur basic sachen mit dem PI image gemacht, wie z.B. Recalbox installiert und ein bisschen mit PI OS rumgespielt. Ich habe auch ein bisschen mit Python und GPIO Pins rumgespielt, aber nichts großes gemacht.",
@@ -145,11 +170,11 @@ const projectCategories = {
       image: "img/raspberry_pi2.webp",
       image2: "img/raspberry_pi2.webp",
       image3: "img/raspberry_pi2.webp",
- },
-
-
+  },
   ],
-    "Modding": [
+  
+  
+  "Modding": [
   {
       title: "3DS Modding",
       description: "Modifizierter Nintendo 3DS mit neuer Software. Mehr Hilfe bei https://3ds.hacks.guide/",
@@ -173,8 +198,18 @@ const projectCategories = {
       image: "img/j5_mod1.webp",
       image2: "img/j5_mod2.webp",
   },
+  //{
+      //title:"Microsoft Lumia 640 Modding",
+      //description: "Modifizierter Microsoft Lumia 640 mit neuer Software.(Bootloader entsperrt.) Jailbreak ist Benötigt. Guide: https://www.youtube.com/watch?v=Uz0npcZxet8&t=576s Es werden 2 Custom Softwares, Insterliert Per Appdloyer CMD Injector und Live Store damit funktioniert der Microsoft Store inkulusive custom Apps, Wie Youtbe oder Discord",
+      //specs: ["Microsoft Lumia 640/Jedes Lumia", "PC ", "Jailbreak", ""],
+      //date: "20.12.2025",
+      //image: "img/lumia640_mod1.webp",
+      //image2: "img/lumia640_mod2.webp",
+  //}
   ],  
-  "Nur mit Strom/Steckbrett": [
+  
+  
+  "Nur mit Strom/Steckbrett(Basic)": [
   {
       title: "Lichtschaltung",
       description: "Eine LED wird per Knopfdruck ausgeschaltet. Lässt man den Knopf los, geht die andere LED an.",
@@ -231,15 +266,13 @@ const translations = {
 
   
 // ===== PROFILE TRANSLATIONS =====
-"Hi ich bin Joshkao und ich habe spaß mit Elektronik deshalb will ich zeigen was ich kann.": { 
-  en: "Hi, I'm Joshkao and I enjoy tech and do stuff just for having fun." 
+"Elektronik Enthusiast der zeigen möchte das Alter kaum was sagt": {
+  en: "Electronics enthusiast who wants to show that age hardly matters."
 },
-"Habt Spaß! Und schaut euch die Projekte an.": { 
-  en: "Have fun! And check out the projects." 
+"Schaut euch die Projekte an und Habt Spaß! Dazu brauche ich eine meinung zu meiner website.": {
+  en: "Check out the projects and have fun! I also need an opinion on my website."
 },
-"Hier ist mein Google Docs mit allen meinen Stuff das ich außerhalb tue!": { 
-  en: "Here is my Google Docs with all the stuff I do outside of this portfolio!" 
-},
+ "Meldet euch bei mir per Mail:": { en: "Contact me via email:" },
 "Abgeschlossene Projekte": { en: "Completed Projects" },
 "Jahre Erfahrung": { en: "Years of Experience" },
 "Verschiedene Boards": { en: "Different Boards" },
@@ -255,7 +288,7 @@ const translations = {
   "Raspberry Pi 2": { en: "Raspberry Pi 2" },
   "Raspberry Pi 5": { en: "Raspberry Pi 5" },
   "Modding": { en: "Modding" },
-  "Nur mit Strom/Steckbrett": { en: "Power/Breadboard Only" },
+  "Nur mit Strom/Steckbrett(Basic)": { en: "Power/Breadboard Only (Basic)" },
 
   // Project titles and descriptions
   //ESP Projekte
@@ -279,6 +312,9 @@ const translations = {
   //Raspberry Pi Zero 2W
   "Raspberry Pi Zero 2W P4wnP1 A.L.O.A.": { en: "Raspberry Pi Zero 2W P4wnP1 A.L.O.A." },
   "Ein Raspberry Pi Zero 2W mit P4wnP1 A.L.O.A. installiert. Es ist ein Tool für Penetrationstests und kann als USB-Gadget fungieren, um verschiedene Angriffe durchzuführen.": { en: "A Raspberry Pi Zero 2W with P4wnP1 A.L.O.A. installed. It is a tool for penetration testing and can function as a USB gadget to perform various attacks." }, 
+  "Pwny (Pwnagotchi)": { en: "Pwny (Pwnagotchi)"},
+  "Ein Rasberry Pi Zero 2W der WiFi Pakete abfängt die man später ablesen kann": { en: " A Raspberry Zero 2 that cathes WiFi data and converts them to readeble data"},
+  
   //Raspberry Pi Pico 2
   "Raspberry Pi Pico 2": { en: "Raspberry Pi Pico 2" },
   "Eine einafaches an und aus der eingebauten LED mit MicroPython.": { en: "A simple on and off of the built-in LED with MicroPython." },
@@ -289,6 +325,9 @@ const translations = {
   //Raspberry Pi Pico 2W/WH
   "Raspberry Pi Pico WH - Tisch uhr": { en: "Raspberry Pi Pico WH - Table Clock" },                                                                                     //HIER BEARBEITEN
   "Ein Raspberry Pi Pico WH mit einem OLED Display das die aktuelle Zeit anzeigt. Es ist ein einfaches Projekt um die Möglichkeiten des Pico WH zu zeigen.": { en: "A Raspberry Pi Pico WH with an OLED display that shows the current time. It's a simple project to demonstrate the capabilities of the Pico WH." },
+  //Raspberry pico namens schild
+  "Namens schild mit einem E-Ink Display.": { en: "an Name Tag with an E-Ink Display" },
+  "Ein  Pi Pico das mit einem E-Ink Display mit meinem Namen": { en:"An Pi Pico that has an E-Ink Display  with my name" },
   //PI2
   "Raspberry Pi 2": { en: "Raspberry Pi 2" },
   //Projekt Raspberry Pi 2
@@ -327,6 +366,19 @@ function translate(text) {
   if (currentLanguage === 'de') return text;
   return translations[text]?.en || text;
 }
+//I Punkt
+const btn = document.getElementById("contactBtn");
+const card = document.getElementById("contactCard");
+btn.onclick = () => {
+    card.classList.toggle("show");
+};
+
+document.addEventListener("click", e => {
+    if(!card.contains(e.target) && !btn.contains(e.target)){
+        card.classList.remove("show");
+    }
+
+});
 
 function makeChip(text, badgeText = null) {
   const chip = document.createElement("span");
@@ -342,7 +394,7 @@ function translateStaticTexts() {
   const subtitle = document.querySelector('.profile-subtitle');
   if (subtitle) {
     subtitle.textContent = translate(
-      "Hi ich bin Joshkao und ich habe spaß mit Elektronik deshalb will ich zeigen was ich kann."
+      "Elektronik Enthusiast der zeigen möchte das Alter kaum was sagt"
     );
   }
 
@@ -350,20 +402,16 @@ function translateStaticTexts() {
   const description = document.querySelector('.profile-description');
   if (description) {
     description.textContent = translate(
-      "Habt Spaß! Und schaut euch die Projekte an."
+      "Schaut euch die Projekte an und Habt Spaß! Dazu brauche ich eine meinung zu meiner website."
     );
   }
+const mailText = document.querySelector('.mailText');
 
-  // Google Docs Text (mit Link erhalten)
-  const googleDocs = document.querySelector('.Google-Docs');
-  if (googleDocs) {
-    googleDocs.innerHTML = `
-      ${translate("Hier ist mein Google Docs mit allen meinen Stuff das ich außerhalb tue!")}
-      <a href="https://docs.google.com/document/d/1KYouftarPhQ07WWtBuGrrN9v8OMkQOC9dEZHdIldZng/edit?tab=t.0">
-      Google Docs
-      </a>
-    `;
-  }
+if (mailText) {
+  mailText.innerHTML = translate(
+    "Meldet euch bei mir per Mail:"
+  ) + ` <a href="mailto:Joshkao@protonmail.me">Joshkao@protonmail.me</a>`;
+}
 
 // Stats Labels (FIXED)
 document.querySelectorAll('.profile-stat-label').forEach(el => {
@@ -534,6 +582,7 @@ function renderProjects(filter = '') {
     projectsDiv.appendChild(catDiv);
   }
 }
+
 
 // Fade-In beim Laden
 document.addEventListener("DOMContentLoaded", () => {

@@ -6,27 +6,50 @@
 </style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <button id="langToggle" style="background: linear-gradient(135deg, #c77dff, #ec4899); color:white;">🇬🇧 EN</button>
   <title>Joshkao - Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <button id="langToggle" style="background: linear-gradient(135deg, #c77dff, #ec4899); color:white;">🇬🇧 EN</button>
   
   <div class="container">
     <!-- Profile Section -->
     <section class="profile-section" aria-label="Profil von Joshkao">
+      <button id="contactBtn" class="contact-btn" onclick="copyEmail()">
+    <i class="fa-solid fa-circle-info" style="position: relative;"><span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 0.6em;">i</span></i>
+</button>
+
+<div id="contactCard" class="contact-card">
+    <h2>Contact</h2>
+    <div class="contact-item">
+      <i class="fa-solid fa-envelope"></i>
+      <span id="emailAddress">Joshkao@protonmail.me</span>
+    </div>
+    <div class="contact-item">
+        <i class="fa-brands fa-github"></i>
+        <span>github.com/Joshkao0</span>
+    </div>
+    <div class="contact-item">
+        <i class="fa-brands fa-discord"></i>
+        <span>"Joshkao." on Discord</span>
+    </div>
+    <div class="contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Germany</span>
+    </div>
+    <hr>
+    <button class="copy-btn" onclick="copyEmail()">Copy Email</button>
+</div>
       <div class="profile-image-container">
         <img src="img/Benutzer/Benutzerbild.PNG" alt="Profilbild Benutzer" class="profile-image" onerror="this.src='https://via.placeholder.com/180'">
         <div class="profile-badge" aria-label="Blitz Icon"><i class="ri-flashlight-line"></i></div>
       </div>
       <div class="profile-details">
         <h1 class="profile-name">Joshkao</h1>
-        <p class="profile-subtitle">Hi ich bin Joshkao und ich habe spaß mit Elektronik deshalb will ich zeigen was ich kann.</p>
-        <p class="profile-description">Habt Spaß! Und schaut euch die Projekte an.</p>
-        <!-- <p class="Google-Docs"> Hier ist mein <a href="https://docs.google.com/document/d/1KYouftarPhQ07WWtBuGrrN9v8OMkQOC9dEZHdIldZng/edit?tab=t.0" target="_blank">Google Docs</a> mit allen meinen Stuff das ich außerhalb tue!</p> -->
-
+        <p class="profile-subtitle">Elektronik Enthusiast der zeigen möchte das Alter kaum was sagt</p>
+        <p class="profile-description">Schaut euch die Projekte an und Habt Spaß! Dazu brauche ich eine meinung zu meiner Website.</p>
         <div class="profile-stats" aria-label="Profil Statistiken">
           <div class="profile-stat" style="color: #facc15;">
             <i class="ri-lightbulb-flash-line profile-stat-icon" aria-hidden="true"></i>
@@ -55,7 +78,7 @@
           <span class="profile-tag">ESP32/ESP8266</span>
           <span class="profile-tag">Arduino</span>
           <span class="profile-tag">Raspberry Pi</span>
-          <span class="profile-tag">MicroPython</span>
+          <span class="profile-tag">Pi Pico</span>
           
         </div>
       </div>
@@ -86,6 +109,37 @@
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script>
+  function copyEmail() {
+    const email = document.getElementById('emailAddress').textContent.trim();
+    if (!email) return;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(email).then(() => {
+        alert('Email copied to clipboard');
+      }).catch(() => {
+        fallbackCopy(email);
+      });
+    } else {
+      fallbackCopy(email);
+    }
+  }
+
+  function fallbackCopy(text) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+      document.execCommand('copy');
+      alert('Email copied to clipboard');
+    } catch (e) {
+      alert('Could not copy email');
+    }
+    document.body.removeChild(ta);
+  }
 </script>
   <script src="script.js"></script>
 </body>
